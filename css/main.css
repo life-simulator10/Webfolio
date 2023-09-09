@@ -101,7 +101,7 @@ section {
 }
 
 .about-section .about-left {
-  visibility: hidden;
+  display: none;
 }
 .about-section .about-right h1 {
   font-size: 40px;
@@ -220,132 +220,22 @@ section {
   padding: 20px;
   margin: 2em;
 }
-.myskills-section .skills {
-  margin-left: 55px;
+.myskills-section .skills-container {
+  display: grid;
+  gap: 40px;
+  grid-template-rows: repeat(3, 200px);
+  grid-template-columns: repeat(3, 200px);
+  margin-left: 1em;
 }
-.myskills-section .skills h3 {
-  font-size: 20px;
-  margin-bottom: 10px;
-  font-weight: 500;
-  letter-spacing: 1px;
-  margin-bottom: 5px;
+.myskills-section .skills-container .skill {
+  border-radius: 0.7em;
+  text-align: center;
+  background-color: var(--card-color);
 }
-.myskills-section .skills .progress-bar {
-  background: var(--card-color);
-  width: 80%;
-  height: 12px;
-  border-radius: 0.5em;
-}
-.myskills-section .skills .progress-bar div {
-  height: 12px;
-  border-radius: 0.5em;
-  width: 0%;
-  background-color: var(--primary-color);
-}
-.myskills-section .skills .progress-bar div span {
-  float: right;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: -2em;
-}
-.myskills-section .skills .progress-bar .html {
-  -webkit-animation: html 1s linear forwards;
-          animation: html 1s linear forwards;
-}
-.myskills-section .skills .progress-bar .css {
-  -webkit-animation: css 1s linear forwards;
-          animation: css 1s linear forwards;
-}
-.myskills-section .skills .progress-bar .Javascript {
-  -webkit-animation: js 1s linear forwards;
-          animation: js 1s linear forwards;
-}
-.myskills-section .skills .progress-bar .Cpp {
-  -webkit-animation: cpp 1s linear forwards;
-          animation: cpp 1s linear forwards;
-}
-.myskills-section .skills .progress-bar .Photoshop {
-  -webkit-animation: photoshop 1s linear forwards;
-          animation: photoshop 1s linear forwards;
-}
-.myskills-section .skills .progress-bar .Video-Editing {
-  -webkit-animation: videoediting 1s linear forwards;
-          animation: videoediting 1s linear forwards;
-}
-.myskills-section .skills .progress-bar .Blender {
-  -webkit-animation: blender 1s linear forwards;
-          animation: blender 1s linear forwards;
-}
-@-webkit-keyframes html {
-  100% {
-    width: 80%;
-  }
-}
-@keyframes html {
-  100% {
-    width: 80%;
-  }
-}
-@-webkit-keyframes css {
-  100% {
-    width: 65%;
-  }
-}
-@keyframes css {
-  100% {
-    width: 65%;
-  }
-}
-@-webkit-keyframes cpp {
-  100% {
-    width: 65%;
-  }
-}
-@keyframes cpp {
-  100% {
-    width: 65%;
-  }
-}
-@-webkit-keyframes js {
-  100% {
-    width: 60%;
-  }
-}
-@keyframes js {
-  100% {
-    width: 60%;
-  }
-}
-@-webkit-keyframes photoshop {
-  100% {
-    width: 45%;
-  }
-}
-@keyframes photoshop {
-  100% {
-    width: 45%;
-  }
-}
-@-webkit-keyframes videoediting {
-  100% {
-    width: 70%;
-  }
-}
-@keyframes videoediting {
-  100% {
-    width: 70%;
-  }
-}
-@-webkit-keyframes blender {
-  100% {
-    width: 50%;
-  }
-}
-@keyframes blender {
-  100% {
-    width: 50%;
-  }
+.myskills-section .skills-container .skill img {
+  margin-top: 2rem;
+  width: 5em;
+  height: 80px;
 }
 
 .projects-section .container {
@@ -360,41 +250,11 @@ section {
   color: var(--grey);
 }
 .projects-section .container .image-card {
-  margin-top: 5em;
-  display: flex;
-  flex-direction: row;
+  margin-right: 20px;
 }
-.projects-section .container .image-card .image-1 img {
-  -webkit-animation-name: slider 5s linear forwards;
-          animation-name: slider 5s linear forwards;
-  border: 2px solid white;
-}
-@-webkit-keyframes slider {
-  0% {
-    transform: translate(0, 0);
-  }
-  50% {
-    transform: translate(-450px, 0);
-  }
-  100% {
-    transform: translate(-900px, 0);
-  }
-}
-@keyframes slider {
-  0% {
-    transform: translate(0, 0);
-  }
-  50% {
-    transform: translate(-450px, 0);
-  }
-  100% {
-    transform: translate(-900px, 0);
-  }
-}
-.projects-section .container img {
-  height: 40vh;
-  width: 35vw;
-  margin: 2em 3.5em;
+.projects-section .container .image-card ul li img {
+  width: 30rem;
+  border-radius: 1rem;
 }
 
 .contacts-section .container {
@@ -425,7 +285,6 @@ section {
   border-width: 10px;
 }
 .contacts-section .container ul li img {
-  background: var(--card-color);
   height: 5vh;
   padding: 2.2em;
   border-radius: 5em;
@@ -504,6 +363,10 @@ footer .footer-links a:hover {
 footer .footer-text {
   margin-top: 2em;
   color: var(--grey);
+}
+
+#shadow-host-companion {
+  display: none;
 }
 
 @media only screen and (min-width: 768px) {
@@ -589,10 +452,11 @@ footer .footer-text {
   }
   .about-section .about-left {
     visibility: visible;
-    margin: 20% 20%;
+    margin-top: 6rem;
   }
   .about-section .about-left img {
-    width: 25vw;
+    border-radius: 4%;
+    width: 30vw;
     height: 40vh;
   }
   .about-section .about-right {

@@ -99,7 +99,7 @@ section {
 
 .about-section {
   .about-left {
-    visibility: hidden;
+    display: none;
   }
   .about-right {
     h1 {
@@ -228,91 +228,25 @@ section {
     padding: 20px;
     margin: 2em;
   }
-  .skills {
-    margin-left: 55px;
-    h3 {
-      font-size: 20px;
-      margin-bottom: 10px;
-      font-weight: 500;
-      letter-spacing: 1px;
-      margin-bottom: 5px;
-    }
-    .progress-bar {
-      background: var(--card-color);
-      width: 80%;
-      height: 12px;
-      border-radius: 0.5em;
-      div {
-        height: 12px;
-        border-radius: 0.5em;
-        width: 0%;
-        background-color: var(--primary-color);
-        span {
-          float: right;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          margin-top: -2em;
-        }
-      }
-      .html {
-        animation: html 1s linear forwards;
-      }
-      .css {
-        animation: css 1s linear forwards;
-      }
-      .Javascript {
-        animation: js 1s linear forwards;
-      }
-      .Cpp {
-        animation: cpp 1s linear forwards;
-      }
-      .Photoshop {
-        animation: photoshop 1s linear forwards;
-      }
-      .Video-Editing {
-        animation: videoediting 1s linear forwards;
-      }
-      .Blender {
-        animation: blender 1s linear forwards;
-      }
-      @keyframes html {
-        100% {
-          width: 80%;
-        }
-      }
-      @keyframes css {
-        100% {
-          width: 65%;
-        }
-      }
-      @keyframes cpp {
-        100% {
-          width: 65%;
-        }
-      }
-      @keyframes js {
-        100% {
-          width: 60%;
-        }
-      }
-      @keyframes photoshop {
-        100% {
-          width: 45%;
-        }
-      }
-      @keyframes videoediting {
-        100% {
-          width: 70%;
-        }
-      }
-      @keyframes blender {
-        100% {
-          width: 50%;
-        }
+  .skills-container{
+    display: grid;
+    gap: 40px;
+    grid-template-rows: repeat(3,200px);
+    grid-template-columns: repeat(3,200px) ;
+    margin-left: 1em;
+    .skill{
+      border-radius: .7em;
+      text-align: center;
+      background-color: var(--card-color);
+      img{
+        margin-top: 2rem;
+        width: 5em;
+        height: 80px;
       }
     }
   }
+  
+  
 }
 .projects-section {
   .container {
@@ -326,29 +260,15 @@ section {
       color: var(--grey);
     }
     .image-card {
-      margin-top: 5em;
-      display: flex;
-      flex-direction: row;
-      .image-1 img {
-        animation-name: slider 5s linear forwards;
-        border: 2px solid white;
-      }
-      @keyframes slider {
-        0% {
-          transform: translate(0, 0);
-        }
-        50% {
-          transform: translate(-450px, 0);
-        }
-        100% {
-          transform: translate(-900px, 0);
+      margin-right: 20px;
+      ul{
+        li{
+          img{
+            width: 30rem;
+            border-radius: 1rem;
+          }
         }
       }
-    }
-    img {
-      height: 40vh;
-      width: 35vw;
-      margin: 2em 3.5em;
     }
   }
 }
@@ -379,7 +299,6 @@ section {
           border-width: 10px;
         }
         img {
-          background: var(--card-color);
           height: 5vh;
           padding: 2.2em;
           border-radius: 5em;
@@ -404,6 +323,7 @@ section {
           top: 0px;
           width: 80vw;
           height: 100%;
+          
         }
       }
       .right-contact {
@@ -465,6 +385,10 @@ footer {
     margin-top: 2em;
     color: var(--grey);
   }
+}
+
+#shadow-host-companion{
+  display: none;
 }
 
 @media only screen and (min-width: 768px) {
@@ -549,9 +473,10 @@ footer {
     flex-direction: row;
     .about-left {
       visibility: visible;
-      margin: 20% 20%;
+      margin-top: 6rem;
       img {
-        width: 25vw;
+        border-radius: 4%;
+        width: 30vw;
         height: 40vh;
       }
     }
