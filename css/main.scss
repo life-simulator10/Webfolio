@@ -258,14 +258,71 @@ section {
     .projects-description {
       text-align: center;
       color: var(--grey);
+      margin-bottom: 2rem;
+    }
+    .card-container{
+      background-color: var(--card-color);
+      width: 1000vw;
+      height: 50vh;
+      margin-left: -20vw;
     }
     .image-card {
+      display: flex;
       margin-right: 20px;
       ul{
+        display: flex;
+        flex-direction: row;
+        gap: 10%;
+        position: relative;
+        animation: mymove 10s infinite ;
+        @keyframes mymove {
+          from {left: 0px;}
+          to {left: -1450px;}
+        }
         li{
+          position: relative;
+          width: fit-content;
+          
           img{
-            width: 30rem;
+            width: 35rem;
             border-radius: 1rem;
+                    
+          }
+          .procontent{
+            height: 100%;
+            top: 0;
+            left: 0;
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.6);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            opacity: 1;
+            transition: 0.6s;
+            h2{
+              color: var(--primary-color);
+              border: 2px solid var(--primary-color);
+              padding: 10px;
+              margin-bottom: 0rem;
+              opacity: 0.8;
+            }
+            p{
+              padding-left: 10%;
+              padding-right: 10%;
+              color: white
+            }
+            a{
+              background-color: var(--primary-color);
+              opacity: 0.8;
+              text-align: center;
+              padding: 0.5rem;
+              width: 97%;
+              color: black;
+              font-size: large;
+              text-decoration: none;
+              border-radius: 3px;
+            }
           }
         }
       }
@@ -287,16 +344,22 @@ section {
       text-align: center;
     }
     ul {
-      margin-top: 8em;
       margin-bottom: 6em;
       text-align: center;
       li {
+        i{
+          background-color: var(--card-color);
+          min-width: 7.8rem;
+          min-height: 4rem;
+          padding-top: 3rem;
+          font-size:larger;
+          color: var(--primary-color);
+          border-radius: 50%;
+        }
         margin-top: 6em;
+        border-radius: 2rem;
         .contact-i {
           position: relative;
-          background: #e0e0e0;
-          box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
-          border-width: 10px;
         }
         img {
           height: 5vh;
@@ -390,6 +453,46 @@ footer {
 #shadow-host-companion{
   display: none;
 }
+
+nav.menu-btn{
+  display: block;
+}
+
+nav{
+  position: fixed;
+  z-index: 100;
+  width: 66%;
+  right: 0;
+  top: 0;
+  background-color: black;
+  height: 100vh;
+  padding: 1em;
+  ul.primary-nav{
+    margin-top: 5em;
+  }
+  li{
+    a{
+      color: white;
+      text-decoration: none;
+      display: block;
+      padding: .5em;
+      font-size: 1.3em;
+      text-align: left;
+      transition: all .4s ease-in;
+      &:hover{
+        font-weight: bold;
+        color: var(--primary-color);
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+.mobile-menu-exit{
+  float: right;
+  margin: .5em;
+  cursor: pointer;
+}
+
 
 @media only screen and (min-width: 768px) {
   .mobile-menu {
