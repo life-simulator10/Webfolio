@@ -100,6 +100,9 @@ section {
   opacity: 0.3;
 }
 
+.about-section {
+  margin-top: 10vh;
+}
 .about-section .about-left {
   display: none;
 }
@@ -468,7 +471,6 @@ nav li a {
 nav li a:hover {
   font-weight: bold;
   color: var(--primary-color);
-  transform: scale(1.1);
 }
 
 .mobile-menu-exit {
@@ -478,11 +480,8 @@ nav li a:hover {
 }
 
 @media only screen and (min-width: 768px) {
-  .mobile-menu {
+  .mobile-menu, .mobile-menu-exit {
     display: none;
-  }
-  .mobile-menu-exit {
-    visibility: hidden;
   }
   .navbar {
     margin: 0;
@@ -490,7 +489,7 @@ nav li a:hover {
   }
   .navbar .container {
     overflow: hidden;
-    min-height: 5em;
+    height: 12vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -502,16 +501,22 @@ nav li a:hover {
     margin: auto 2em;
     font-size: 24px;
   }
+  .navbar .container .primary-nav {
+    text-align: center;
+  }
   .navbar nav {
     display: flex;
+    min-height: 10vh;
+    position: relative;
+    margin-right: 70%;
     justify-content: space-around;
   }
   .navbar nav ul {
     display: flex;
-    margin-right: 10em;
+    margin-left: 30%;
   }
   .navbar nav ul li {
-    margin: auto 5px;
+    margin: auto 5px 20em;
   }
   .navbar nav a {
     position: relative;
@@ -590,7 +595,86 @@ nav li a:hover {
   .about-section .about-right .sub-about .sub-about-right {
     color: var(--grey);
   }
-  .myskills-section .skills {
-    margin: auto 10%;
+  .myskills-section .container .skills-container {
+    margin-left: 6vw;
+    display: grid;
+    gap: 40px;
+    grid-template-rows: repeat(3, 250px);
+    grid-template-columns: repeat(3, 400px);
+    place-items: center;
+  }
+  .myskills-section .container .skills-container .skill {
+    border-radius: 0.7em;
+    text-align: center;
+    background-color: var(--card-color);
+    height: 30vh;
+    width: 20vw;
+  }
+  .myskills-section .container .skills-container .skill img {
+    margin-top: 2rem;
+    width: 6em;
+    height: 6em;
+  }
+  .contacts-section ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  .contacts-section .form-container {
+    display: none;
+  }
+  .contacts-section .form-container {
+    height: -moz-fit-content;
+    height: fit-content;
+    width: 30vw;
+  }
+  .contacts-section .form-container .left-contact {
+    height: 64.5vh;
+    width: 40vw;
+  }
+  .contacts-section .form-container .right-contact {
+    margin-left: auto;
+    width: 0%;
+  }
+  .contacts-section .container .form-container .right-contact {
+    position: absolute;
+    top: 3.45vh;
+    left: 0;
+    width: 34vw;
+    height: 39.25%;
+    background-color: var(--form-container-color);
+    padding: 3em;
+  }
+  .contacts-section .container .form-container .left-contact img {
+    margin-top: -100%;
+    margin-left: 40.3vw;
+    width: 41vw;
+    height: 100%;
+  }
+  .resume-section .container ul {
+    display: grid;
+    grid-template-rows: repeat(2, 400px);
+    grid-template-columns: repeat(2, 600px);
+    margin-left: 6vw;
+  }
+  .services-section .container ul {
+    display: grid;
+    gap: 30px;
+    grid-template-rows: repeat(2, 250px);
+    grid-template-columns: repeat(2, 550px);
+    margin-left: 9vw;
+    letter-spacing: 0.1em;
+  }
+  .services-section .container ul li img {
+    color: var(--primary-color);
+  }
+  .about-section {
+    margin-top: 20vh;
+    margin-left: 10vw;
+  }
+  .about-section .container .about-left {
+    display: block;
+  }
+  .about-section .container .about-right h1 {
+    text-align: left;
   }
 }/*# sourceMappingURL=main.css.map */

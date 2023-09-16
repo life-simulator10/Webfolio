@@ -32,7 +32,7 @@
         <div class="container">
             <div class="left-col">
                 <p class="subhead">HELLO!</p>
-                <h1>I'm <span>Bishal Pangeni</span></h1>
+                <h1>I'm <span>Bishwa Pangeni</span></h1>
                 <p class="subhead-description">A Freelance Web Designer</p>
                 <div class="hero-cta">
                     <a href="#" class="primary-cta">HIRE ME</a>
@@ -69,7 +69,7 @@
                     </div>
                 </div>
                 <p class="project-completed"><span>10</span> Project complete</p>
-                <a href="#" class="CV">Download CV</a>
+                <a href="./images/Bishwa-Pangeni-cv (4).pdf" class="CV" download="bishwaCV">Download CV</a>
             </div>
         </div>
     </section>
@@ -115,19 +115,19 @@
             <p class="services-description">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
             <ul>
                 <li>
-                    <img src="images/web-designing.png" alt="">
+                    <img src="images/webd.png" alt="">
                     <p class="services"> Web Design</p>
                 </li>
                 <li>
-                    <img src="images/web-designing.png" alt="">
-                    <p class="services"> Photography</p>
+                    <img src="images/videoediting.png" alt="">
+                    <p class="services"> Video Editing</p>
                 </li>
                 <li>
-                    <img src="images/web-designing.png" alt="">
+                    <img src="images/web2.png" alt="">
                     <p class="services"> Web Developer</p>
                 </li>
                 <li>
-                    <img src="images/web-designing.png" alt="">
+                    <img src="images/mobile.png" alt="">
                     <p class="services"> App Developing</p>
                 </li>
             </ul>
@@ -231,7 +231,7 @@
             <h1>Contact Me</h1>
             <div class="contacts-description">
                 Far far away, behind the word mountains, far from the countries Vokalia and Consonantia
-            </div>
+            
             <ul>
                 <li>
                     <div class="contact-i">
@@ -267,6 +267,7 @@
                     </p>
                 </li>
             </ul>
+            </div>
             <div class="form-container">
                 <div class="left-contact">
                     <img src="images/person.jpg" alt="">
@@ -298,7 +299,21 @@
     </footer>
 
     <script>
+        const mobileBtn = document.getElementById("mobile-cta")
+              nav = document.querySelector("nav")
+              mobileBtnExit = document.getElementById("mobile-exit");
         
+        mobileBtn.addEventListener("click",()=>{
+            nav.classList.add("menu-btn");
+        })
+
+        mobileBtnExit.addEventListener("click",()=>{
+            nav.classList.remove("menu-btn");
+        })
+
+        mobileBtn.addEventListener("click",()=>{
+            nav.classList.add("menu-btn");
+        })
     </script>
 </body>
 </html>
