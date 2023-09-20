@@ -254,6 +254,7 @@ section {
   margin-bottom: 2rem;
 }
 .projects-section .container .card-container {
+  margin-top: 25vh;
   background-color: var(--card-color);
   width: 1000vw;
   height: 50vh;
