@@ -370,7 +370,6 @@ section {
 }
 .contacts-section .container .form-container {
   position: relative;
-  background-color: var(--card-color);
   height: 130vh;
   width: 80vw;
   display: flex;
@@ -625,7 +624,7 @@ nav li a:hover {
   .contacts-section .form-container {
     height: -moz-fit-content;
     height: fit-content;
-    width: 30vw;
+    width: 25vw;
   }
   .contacts-section .form-container .left-contact {
     height: 64.5vh;
@@ -637,17 +636,17 @@ nav li a:hover {
   }
   .contacts-section .container .form-container .right-contact {
     position: absolute;
-    top: 3.45vh;
-    left: 0;
-    width: 34vw;
+    top: 39.75vh;
+    left: 6.5rem;
+    width: 27vw;
     height: 39.25%;
     background-color: var(--form-container-color);
     padding: 3em;
   }
   .contacts-section .container .form-container .left-contact img {
-    margin-top: -100%;
+    margin-top: -30%;
     margin-left: 40.3vw;
-    width: 41vw;
+    width: 31vw;
     height: 100%;
   }
   .resume-section .container ul {
@@ -668,7 +667,8 @@ nav li a:hover {
     color: var(--primary-color);
   }
   .about-section {
-    margin-top: 20vh;
+    margin-bottom: -40vh;
+    height: 70vh;
     margin-left: 10vw;
   }
   .about-section .container .about-left {
