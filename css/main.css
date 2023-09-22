@@ -678,4 +678,13 @@ nav li a:hover {
   .about-section .container .about-right h1 {
     text-align: left;
   }
+  .home .container .left-col {
+    margin-top: 50px;
+  }
+  .home .container .left-col .subhead {
+    font-size: 30px;
+  }
+  .home .container .left-col .subhead h1 {
+    font-size: 100px;
+  }
 }/*# sourceMappingURL=main.css.map */

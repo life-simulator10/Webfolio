@@ -523,7 +523,7 @@ nav{
   }
   .navbar nav {
     display: flex;
-    min-height: 10vh;
+    height: 10vh;
     position: relative;
     margin-right: 70%;
     justify-content: space-around;
@@ -712,6 +712,18 @@ nav{
       text-align: left;
     }
   }
+  }
+}
+
+.home .container{
+  .left-col{
+    margin-top: 50px;
+    .subhead{
+      font-size: 30px;
+      h1{
+        font-size: 100px;
+      }
+    }
   }
 }
 }

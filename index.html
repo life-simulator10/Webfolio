@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bishwa Pangeni</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
@@ -28,14 +29,15 @@
         </div>
     </div>
     <section class="home" id="home">
-        <div class="container">
-            <div class="left-col">
+        <div class="container" >
+            <div class="left-col" data-aos="fade-up" data-aos-duration="1000"
+            data-aos-easing="ease-in-out">
                 <p class="subhead">HELLO!</p>
                 <h1>I'm <span>Bishwa Pangeni</span></h1>
-                <p class="subhead-description">A Freelance Web Designer</p>
+                <p class="subhead-description">Web/Mobile App developer</p>
                 <div class="hero-cta">
                     <a href="#" class="primary-cta">HIRE ME</a>
-                    <a href="#" class="myworks-cta">MY WORKS</a>
+                    <a href="#projects" class="myworks-cta">MY WORKS</a>
                 </div>
             </div>
             <img class="home-image" src="images/person.jpg" alt="">
@@ -44,11 +46,11 @@
 
     <section class="about-section" id="about">
         <div class="container">
-            <div class="about-left">
+            <div class="about-left" data-aos="fade-right">
                 <img src="images/person.jpg" alt="">
             </div>
 
-            <div class="about-right">
+            <div class="about-right" data-aos="fade-left">
                 <h1>About Me</h1>
                 <p class="about-description">Aspiring computer engineer at Kathmandu University.</p>
                 <div class="sub-about">
@@ -67,12 +69,12 @@
                         <p>+977-9867420293</p>
                     </div>
                 </div>
-                <p class="project-completed"><span>10</span> Project complete</p>
-                <a href="./images/Bishwa-Pangeni-cv (4).pdf" class="CV" download="bishwaCV">Download CV</a>
+                <p class="project-completed" data-aos="fade-up"><span>10</span> Project complete</p>
+                <a href="./images/Bishwa-Pangeni-cv (4).pdf" class="CV" download="bishwaCV" data-aos="fade-down">Download CV</a>
             </div>
         </div>
     </section>
-    <section class="resume-section" id="resume">
+    <section class="resume-section" id="resume" data-aos="flip-right" data-aos-duration="1500">
         <div class="container">
             <h1>Resume</h1>
             <p class="resume-description">Explore my professional journey through my comprehensive resume, showcasing my skills</p>
@@ -88,30 +90,30 @@
                     <h2>2019-2023</h2>
                     <p class="resume-subhead">Bachelor Degree of Computer Science</p>
                     <p class="resume-sector">Kathmandu University</p>
-                    <p class="resume-description">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                    <p class="resume-description">It is an institution of higher learning dedicated to maintaining the standard of academic excellence in various classical and professional disciplines.</p>
                 </li>
 
                 <li>
-                    <h2>2014-2015</h2>
-                    <p class="resume-subhead">Bachelor Degree of Computer Science</p>
+                    <h2>2020-Present</h2>
+                    <p class="resume-subhead">Web developer</p>
                     <p class="resume-sector">Kathmandu University</p>
-                    <p class="resume-description">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                    <p class="resume-description">Building dynamic websites using MongoDB, Express, React, and Node for modern, scalable, and responsive user experiences.</p>
                 </li>
 
                 <li>
-                    <h2>2014-2015</h2>
-                    <p class="resume-subhead">Bachelor Degree of Computer Science</p>
+                    <h2>2021-Present</h2>
+                    <p class="resume-subhead">Mobile developer</p>
                     <p class="resume-sector">Kathmandu University</p>
-                    <p class="resume-description">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+                    <p class="resume-description">Creating feature-rich, cross-platform apps using Flutter's framework, delivering stunning user interfaces and optimal performance.</p>
                 </li>
             </ul>
         </div>
     </section>
 
     <section class="services-section" id="services">
-        <div class="container">
+        <div class="container" data-aos="fade-right">
             <h1>Services</h1>
-            <p class="services-description">A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+            <p class="services-description"> Let's collaborate to achieve your goals and bring your ideas to life.</p>
             <ul>
                 <li>
                     <img src="images/webd.png" alt="">
@@ -139,7 +141,7 @@
             <p class="skills-description">
                 These are the areas in which I possess specialized knowledge.
             </p>
-            <div class="skills-container">
+            <div class="skills-container" data-aos="slide-up">
                 <div class="skill python">
                     <img src="./images/python.svg" alt="python">
                     <p>Python</p>
@@ -213,6 +215,22 @@
                                 <a href="https://github.com/life-simulator10/MoneyMap-2022" target="_blank">Link</a>
                             </div>
                         </li>
+                        <li>
+                            <img src="./images/project1.png" alt="">
+                            <div class="procontent socio">
+                                <h2>Socio</h2>
+                                <p>Social Media App that lets you share,follow and message users at the other end.</p>
+                                <a href="https://github.com/life-simulator10/MoneyMap-2022" target="_blank">Link</a>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="./images/project1.png" alt="">
+                            <div class="procontent moneymap">
+                                <h2>MoneyMap</h2>
+                                <p>Financial tracking app that lets you know about market update and your overall portfolio</p>
+                                <a href="https://github.com/life-simulator10/MoneyMap-2022" target="_blank">Link</a>
+                            </div>
+                        </li>
                         
                     </ul>
                 </div>
@@ -223,7 +241,7 @@
     </section>
 
     <section class="contacts-section" id="contacts">
-        <div class="container">
+        <div class="container" data-aos="fade-up-right">
             <h1>Contact Me</h1>
             <div class="contacts-description">
                 Far far away, behind the word mountains, far from the countries Vokalia and Consonantia
@@ -264,7 +282,7 @@
                 </li>
             </ul>
             </div>
-            <div class="form-container">
+            <div class="form-container" data-aos="fade-up">
                 <div class="left-contact">
                     <img src="images/person.jpg" alt="">
                 </div>
@@ -312,5 +330,13 @@
             nav.classList.add("menu-btn");
         })
     </script>
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+     <script>
+       AOS.init({
+        offset: 300,
+        duration: 700
+       }
+       );
+     </script>
 </body>
 </html>
